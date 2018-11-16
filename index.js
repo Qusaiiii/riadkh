@@ -35,4 +35,4 @@ if (message.content.startsWith(pfix + 'avatar')) {
 }
 });
 
-m7md.login("token") 
+peery.login(process.env.TOKEN);
