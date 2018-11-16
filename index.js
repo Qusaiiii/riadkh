@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const peery = new Discord.Client();
+const pfix = 'P';
 const peeryid = ['508194135694639104'];
 
     peery.on('message', message => {
