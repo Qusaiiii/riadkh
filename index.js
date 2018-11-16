@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const peery = new Discord.Client();
-const pfix = 'P'; // prefix خليها غير حرف M
+const peeryid = ['508194135694639104'];
 
     peery.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
-      if (message.author.id === '508194135694639104','324672376455299074') return;
+      if (!peeryid.includes(message.author.id)) return;
       
   if (message.content.startsWith(pfix + 'setPlaying')) {
     peery.user.setGame(argresult);
@@ -22,7 +22,7 @@ const pfix = 'P'; // prefix خليها غير حرف M
       message.channel.send(`**تَم تغيير الليسينينق الى   ${argresult}**`)
   } else 
   if (message.content.startsWith(pfix + 'stream')) {
-    peery.user.setGame(argresult, "https://www.twitch.tv/alSayed");
+    peery.user.setGame(argresult, "https://www.twitch.tv/peery13");
       message.channel.send(`تم تغييرك حالتك بالتويتش الى   **${argresult}**`)
   }
   if (message.content.startsWith(pfix + 'nick')) {
